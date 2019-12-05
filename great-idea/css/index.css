@@ -172,6 +172,10 @@ nav img {
 	width: 47%;
 }
 
+.section-three img {
+	width: 100%;
+}
+
 .section-four {
 	display: flex;
 	align-items: center;
