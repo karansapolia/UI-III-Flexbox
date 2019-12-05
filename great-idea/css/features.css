@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5 {
 	max-width: 100%;
 }
 
+body {
+	background: #FAFAFA;
+}
+
 .container {
 	width: 90%;
 	margin: 0 auto;
@@ -117,77 +121,6 @@ nav a img {
 	max-width: 200px;	
 }
 
-.title h1 {
-	font-size: 500%;
-}
-
-.section-one {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin: 7% 0 0 0;
-	padding: 5% 0;
-	text-align: center;
-	border-bottom: 1px solid black;
-}
-
-.title-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	width: 50%;
-}
-
-.title-container button {
-	height: 40px;
-	width: 200px;
-	font-size: 120%;
-	text-decoration: none;
-	background: white;
-	color: black;
-	border: 1px solid black;
-	transition: all 0.2s;
-}
-
-.title-container button:hover {
-	color: black;
-	background-color: grey;
-}
-
-.section-one img {
-	width: 40%;
-	max-width: 500px;
-}
-
-.section-two {
-	padding: 5% 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.section-two div {
-	width: 47%;
-}
-
-.section-three img {
-	width: 100%;
-}
-
-.section-four {
-	display: flex;
-	align-items: center;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	padding: 5% 0;
-	border-bottom: 1px solid black;
-}
-
-.section-four div {
-	width: 32%;
-}
-
 footer {
 	padding: 5% 0;
 	margin: 0 auto;
@@ -222,7 +155,7 @@ footer p {
 	width: 100%;
 }
 
-.services-section-two {
+.features-section-two {
 	padding: 2% 0;
 	display: flex;
 	flex-flow: row wrap;
@@ -231,53 +164,26 @@ footer p {
 	border-bottom: 1px solid black;
 }
 
-.services-section-two div {
+.features-section-two div {
 	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-around;
-	width: 48%;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	height: 100px;
+	width: 70%;
 	margin: 2% 0;
 	padding: 2% 2%;
-	border: 1px solid black;
-	background-color: #f4f3f4;
+	border-radius: 8px;
+	background-color: #ffffff;
+	box-shadow: 0 3px 4px rgba(0,0,0,0.3);
 }
 
-.services-section-two div button {
-	height: 35px;
-	width: 150px;
-	margin-top: 5%;
-	text-decoration: none;
-	background: white;
-	color: black;
-	border: 1px solid black;
-	border-radius: 5px;
-	transition: all 0.2s;
+.features-section-two img {
+	height: 100px;
+	position: relative;
+	left: 70px;
+	top: -50px;
 }
 
-.services-section-two div button:hover {
-	color: black;
-	background-color: grey;
-}
-
-.services-section-three {
-	display: flex;
-	justify-content: space-between;
-	flex-flow: row nowrap;
-	padding: 5% 0%;
-}
-
-.services-section-three div {
-	width: 45%;
-	display: flex;
-	flex-flow: column nowrap;
-
-}
-
-.services-section-three p {
-	margin-bottom: 5%;
-}
-
-.services-section-three img {
-	width: 45%;
-	max-width: 400px;
+.feat-4 {
+	align-self: flex-end;
 }
