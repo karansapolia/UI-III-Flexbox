@@ -242,6 +242,16 @@ footer p {
 	background-color: #f4f3f4;
 }
 
+@media all and (max-width: 800px) {
+	.services-section-two {
+		flex-flow: column nowrap;
+	}
+	
+	.services-section-two div {
+		width: 100%;
+	}
+}
+
 .services-section-two div button {
 	height: 35px;
 	width: 150px;
