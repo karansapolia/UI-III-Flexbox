@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	border: 1px solid black;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -64,3 +65,132 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
+* {
+	max-width: 100%;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(171, 253, 226);
+	margin: 2% 0;
+}
+
+nav .links {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+}
+
+.links a {
+	animation-name: color-change;
+	animation-duration: 3s;
+	animation-play-state: paused;
+	color: rgb(199, 199, 199);
+	text-decoration: none;
+	margin: 0 5% 0 0;
+	font-family: 'Roboto';
+}
+
+.links a:hover {
+	animation-play-state: running;
+}
+
+
+@keyframes color-change {
+	from { background-color: rgb(171, 253, 226);}
+	to { background-color: black;}
+}
+
+nav img {
+	width: 20%;
+	max-width: 200px;
+	
+}
+
+.title h1 {
+	font-size: 500%;
+}
+
+.section-one {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 7% 0 0 0;
+	padding: 5% 0;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+.title-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.title-container button {
+	height: 40px;
+	width: 200px;
+	font-size: 120%;
+	text-decoration: none;
+	background: white;
+	color: black;
+	border: 1px solid black;
+	transition: all 0.2s;
+}
+
+.title-container button:hover {
+	color: black;
+	background-color: grey;
+}
+
+.section-one img {
+	width: 40%;
+	max-width: 500px;
+}
+
+.section-two {
+	padding: 5% 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section-two div {
+	width: 47%;
+}
+
+.section-four {
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 5% 0;
+	border-bottom: 1px solid black;
+}
+
+.section-four div {
+	width: 32%;
+}
+
+footer {
+	padding: 5% 0;
+	margin: 0 auto;
+}
+
+footer p {
+	padding: 2% 0;
+	text-align: center;
+}
