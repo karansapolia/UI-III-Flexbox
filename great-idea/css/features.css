@@ -158,7 +158,7 @@ footer p {
 .features-section-two {
 	padding: 2% 0;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column nowrap;
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid black;
@@ -184,6 +184,15 @@ footer p {
 	top: -50px;
 }
 
-.feat-4 {
+.feat-2, .feat-4 {
 	align-self: flex-end;
+}
+
+@media all and (max-width: 800px) {
+	.features-section-two {
+		flex-flow: column nowrap;
+	}
+	.features-section-two div {
+		width: 90%;
+	}
 }

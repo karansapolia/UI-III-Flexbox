@@ -32,9 +32,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+/* ol, ul {
 	list-style: none;
-}
+} */
 blockquote, q {
 	quotes: none;
 }
@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5 {
 
 * {
 	max-width: 100%;
+}
+
+ul {
+	list-style-type: square;
 }
 
 .container {
@@ -290,4 +294,9 @@ footer p {
 .services-section-three img {
 	width: 45%;
 	max-width: 400px;
+}
+
+.services-section-three ul {
+	margin-left: 3%;
+	line-height: 200%;
 }
